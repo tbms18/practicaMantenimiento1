@@ -76,8 +76,8 @@ public class BankAccountTest {
     @DisplayName("Este método debería devolver el cálculo de la cantidad que falta por pagar de un préstamo")
     public void pending_normalCase_equals(){
         BankAccount cuenta = new BankAccount(100);
-        double amount = 1200, interest = 1.3; int npayments = 36, month = 5;
-        double res = 0;
+        double amount = 1200, interest = 1.3; int npayments = 36, month = 1;
+        double res = 1199.9999999927768;
         assertEquals(res, cuenta.pending(amount, interest, npayments, month));
     }
 }
