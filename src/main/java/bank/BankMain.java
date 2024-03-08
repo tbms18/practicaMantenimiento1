@@ -12,7 +12,7 @@ public class BankMain {
             interes, months, bank.payment(total_amount, interes, months));
 
         System.out.printf("Load pending payment of amount %f, with interes %f, %d months, in month %d is: %f\n", total_amount, 
-            interes, months, 2, bank.pending(total_amount, interes, months, 2));
+            interes, months, 2, bank.pending(total_amount, interes, months, 3));
     }
 
     
